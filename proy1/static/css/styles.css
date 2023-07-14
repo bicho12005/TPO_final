@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital@1&family=Cormorant+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.header{
+    background-color:#2a8c4a;
+    padding: 2%;
+    margin: .1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    margin-left: 2%;
+    color: black;
+    font-size: 30px;
+}
+
+.header .nav{
+    margin-right: 2%;
+}
+.header .nav a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 20px;
+    color:white;
+}
+.row{
+    display: flexbox;
+    flex-wrap: wrap;
+}
+.row .article{
+
+    background-color: #9bfab0;
+    margin: .1%;
+    flex: 70%;
+}
+.row .article .section{
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif ;
+}
+.row .titulo{
+    padding: 1%;
+    background-color: #64c27b;
+}
+.row .titulo h1{
+    font-size: 60px ;
+    color: blue;   
+    text-align: center;
+}
+.row .titulo p{
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 20px ;
+    text-align: center;
+    padding-top: 0%;
+    padding-bottom: 3%;
+}
+
+
+.row .article .section .img img{
+    width: 100%;
+}
+.row .article .img-datos{ 
+    padding: 50px;
+}
+.row .article .img-datos h2,
+.row .article .img-datos p{
+    padding: 10px 0 ;
+    text-align: justify;
+}
+.row .aside{
+    background-color: rgb(110, 209, 110);
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    width: 250px;
+    margin: .1%;
+}
+
+.footer{
+    background-color:#9bfab0;
+    padding: 5%;
+    margin: .1%;
+    display: flex;
+    font-size: 30px;
+    
+    justify-content: space-around;
+    align-items: center;
+}
+.footer a{
+    text-decoration: none;
+}
+
+.centrado{
+    text-align: center;
+}
+
+body{
+    background-color: beige;
+}
+h1, p{
+    text-align: center;
+    padding: 1%;
+    font-weight: bold;
+}
+.fondomapa{
+    display:flexbox;
+    text-align: center;
+    background-color: cornsilk;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+    padding: 1% 1%;
+}
+h3{
+    padding: 2% 1%;
+}
+/*esto es solo para la pagina servicios*/
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box .adop1, .guar1, .vet1{
+    padding: 5%;
+    font-size: 20px;
+}
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#adop{
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+    display: none;
+    padding-bottom: 2%;
+}
+#guar{
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+    display: none;
+    padding-bottom: 2%;
+}
+#vet{
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+    display: none;
+    padding-bottom: 2%;
+}

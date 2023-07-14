@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="utf-8"/>
+        <title>HOGAR DE HUELLAS </TItle>
+        <meta NAME="DESCRIPCION" content="ES UN REFUGIO DE ANIMALES
+        PUEDEN ADOPTAR SON TODOS RESCATADOS"/>
+        <meta name="AUTHOR" content="GRUPO 3"/>
+        <meta name="KEYWORDS" content="REFUFIO, REFUGIO DE ANIMALES, ADOPTAR;
+            ADOPTAR ANIMALES"/>
+        <link rel="stylesheet" href="{% static './css/style2.css' %}">
+        <script src="https://kit.fontawesome.com/4e16c83e79.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <div class="manolo">
+        <body>
+            <header class="header">
+                <div class="logo">
+                    <img src="{% static '/img/logo 1_2.PNG' %}" alt="">
+                </div>
+                <nav class="nav">
+                    <a href="{% url 'index' %}">INICIO</a>
+                <a href="{% url 'galeria' %}">GALERIA</a>
+                <a href="{% url 'servicios' %}">SERVICIOS</a>
+                <a href="{% url 'contacto' %}">CONTACTO</a>
+                </nav>
+            </header>
+            <div class="ful-img centrado" id="fulImgBox">
+                <img src="{% static '/img/caballo1_1.jpg' %} id="fulImg" alt="">
+                <span onclick="closeImg()">X</span>
+            </div>
+            <br>
+            <h1 class="centrado"><span>NUESTRA GALERIA</span></h1>
+            <br>
+            <div class="img-gallery centrado">
+                <img src="{% static '/img/caballo111.jpg' %}" width="270" height="270" onclick="openFulImg(this.src)" alt="">
+                <img src="{% static '/img/caballo2.jpeg' %}" width="270" height="270" onclick="openFulImg(this.src)" alt="">
+                <img src="{% static '/img/caballo3.jpeg' %}" width="270" height="270" onclick="openFulImg(this.src)" alt="">
+                <img src="{% static '/img/PERRO NEGRO ENCERRADO MIRANDO AFUERA.jpg' %}" width="270" height="270" onclick="openFulImg(this.src)" alt="">
+                <img src="{% static '/img/PERRO NEGRO ENCERRADO.jpg' %}" width="270" height="270" onclick="openFulImg(this.src)" alt="">
+                <img src="{% static '/img/PERRO MORDIENDO RUEDA.jpg' %}" width="270" height="270" onclick="openFulImg(this.src)" alt="">
+                <img src="{% static '/img/PERRO MARRON CORRIENDO.jpg' %}" width="270" height="270" onclick="openFulImg(this.src)" alt="">
+                <img src="{% static '/img/GATO.jpg' %}" width="270" height="270" onclick="openFulImg(this.src)" alt="">
+            </div>
+            <footer class="footer">
+                <p> Seguinos en </p>
+                <a href="http://www.facebook.com" class="fa-brands fa-facebook" style="color: #744ce1;"></a>
+                <a href="http://www.instagram.com" class="fa-brands fa-instagram" style="color: #e64191;"></a>
+                <a href="http://www.twitter.com" class="fa-brands fa-twitter" style="color: #5ea9c9;"></a>
+            </footer>
+            <script src="{% static '/js/script.js' %}"></script>
+        </body>
+    </div>
+</html>

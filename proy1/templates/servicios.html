@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogar de Huellas</title>
+    <script src="https://kit.fontawesome.com/4e16c83e79.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{% static '/css/styles.css' %}">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="assets/images/logo 1_2.PNG" alt="">
+        </div>
+        <nav class="nav">
+            <a href="{% url 'index' %}">INICIO</a>
+                <a href="{% url 'galeria' %}">GALERIA</a>
+                <a href="{% url 'servicios' %}">SERVICIOS</a>
+                <a href="{% url 'contacto' %}">CONTACTO</a>
+        </nav>
+    </header>
+    <div class="box">
+        <div class="adop1">
+    
+            <h1 id="Adopciones" onmouseover="mostrar_adop();" onmouseout="ocultar_adop();">Adopciones</h1>
+        </div>
+        <div class="guar1">
+            <h1 id="Guarderia" onmouseover="mostrar_guar();" onmouseout="ocultar_guar();">Guarderia</h1>
+        </div>
+        <div class="vet1">
+            <h1 id="veterinaria" onmouseover="mostrar_vet();" onmouseout="ocultar_vet();">veterinaria</h1>
+        </div>
+    </div>
+    <div class="box2">
+        <div id="adop"  style="background-image: url('assets/images/adopcion.JPG')">
+            <p>Hay tantos animalitos que necesitan una familia, si tienes ganas de llevar un nuevo integrante a la tuya puedes venir al Hogar de Huellas y elegir.Ellos te lo agradecerán.Se entregan con todos los documentos en regla y constancias de vacunas.</p>
+        </div>
+        <div id="guar" style="background-image: url('assets/images/guaredria.JPG')">
+            <p>En nuestro refugio cuidamos tus mascotas mientras estés de vacaciones o en viaje de negocios. Acá podrán jugar y correr en nuestro espacio y serán bien atendidos. Para mas información pueden contactarse y visitar nuestras instalaciones.</p>
+        </div>
+        <div id="vet" style="background-image: url('assets/images/veterinaria.JPG')">
+            <p>Tenemos excelentes profesionales que son especialistas en todas las clases de animales. hacemos guardias las 24hs los 365 días del año.Contamos con Quirófano equipado para cirugías.Clinicas y venta de medicamentos.</p>
+        </div>
+    </div>
+       
+    <footer class="footer">
+Seguinos en 
+        <a href="http://www.facebook.com" class="fa-brands fa-facebook" style="color: #744ce1;"></a>
+        <a href="http://www.instagram.com" class="fa-brands fa-instagram" style="color: #e64191;"></a>
+        <a href="http://www.twitter.com" class="fa-brands fa-twitter" style="color: #5ea9c9;"></a>
+       
+        
+        </footer>
+        <script src="assets/JS/scservicios.js"></script>
+</body>
+</html>

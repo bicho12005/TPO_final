@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hogar de Huellas</title>
+        <script src="https://kit.fontawesome.com/4e16c83e79.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="{% static '/img/logo 1_2.PNG' %}" alt="">
+            </div>
+            <nav class="nav">
+                <a href="{% url 'index' %}">INICIO</a>
+                <a href="{% url 'galeria' %}">GALERIA</a>
+                <a href="{% url 'servicios' %}">SERVICIOS</a>
+                <a href="{% url 'contacto' %}">CONTACTO</a>
+            </nav>
+        </header>
+        <div class="row">
+            <section class="titulo">
+                <h1>HOGAR DE HUELLAS</h1>
+                <br/>       
+                <p>Somos una organización sin fines de lucro que nos dedicamos al cuidado de animales en situación de vulnerabilidad. No contamos con ayuda de ninguna organizacion politica ni con subsidios por parte del estado.</p>
+                <article class="article">
+                    <hr>
+                    <div class="section">
+                        <div class="img">
+                            <img src="{% static '/img/Perro1_1.jpg' %}" alt="">
+                        </div>
+                        <div class="img-datos">
+                            <h2>PERROS</h2>
+                            <p>Tenemos mas de 15 perros cuidados, todos con sus correspondientes vacunas, espacio para que corran y jueguen y acceso a espacio comunes con otros animales.</p>
+                        </div>
+                    </div>
+                    <hr>  
+                    <div class="section">  
+                        <div class="img">
+                            <img src="{% static '/img/gato1.jpg' %}" alt="">
+                        </div>
+                        <div class="img-datos">
+                            <h2>GATOS</h2>
+                            <p>En el hogar contamos con más de 10 gatos cuidados, todos con sus correspondientes vacunas, ellos son más independientes y accecen sin problemas a todos los sectores del refugio.</p>
+                        </div> 
+                    </div>
+                    <hr>  
+                    <div class="section">
+                        <div class="img">
+                            <img src="{% static '/img/caballo1_1.jpg' %}" alt="">
+                        </div>
+                        <div class="img-datos">
+                            <h2>CABALLOS</h2>
+                            <p>En el hogar contamos con tres caballos rescatados, que fueron cuidados por veterinarios de nuestro grupo, acá se les da aseo diario, limpieza, cuidado del herraje, hidratación y se los hace ejercitar físicamente. </p>
+                        </div>
+                    <hr>
+                    </div>
+                </article>
+            </section>
+        </div>
+    
+        <footer class="footer">
+            <p> Seguinos en </p>
+            <a href="http://www.facebook.com" class="fa-brands fa-facebook" style="color: #744ce1;"></a>
+            <a href="http://www.instagram.com" class="fa-brands fa-instagram" style="color: #e64191;"></a>
+            <a href="http://www.twitter.com" class="fa-brands fa-twitter" style="color: #5ea9c9;"></a>
+        </footer>
+    </body>
+</html>
+
+<!-- <aside class="aside">
+    <img src="assets/images/adoptame.gif" alt="">
+    <img src="assets/images/perrogato.gif" alt="">
+    <img src="assets/images/perrogato2.gif" alt="">
+</aside> -->
