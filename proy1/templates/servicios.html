@@ -15,7 +15,7 @@
 
     <header class="header">
         <div class="logo">
-            <img src="assets/images/logo 1_2.PNG" alt="">
+            <img src="{% static '/img/logo 1_2.PNG' %}" alt="">
         </div>
         <nav class="nav">
             <a href="{% url 'index' %}">INICIO</a>
@@ -37,7 +37,7 @@
         </div>
     </div>
     <div class="box2">
-        <div id="adop"  style="background-image: url('assets/images/adopcion.JPG')">
+        <div id="adop"  style="background-image: url('static/img/adopcion.JPG')">
             <p>Hay tantos animalitos que necesitan una familia, si tienes ganas de llevar un nuevo integrante a la tuya puedes venir al Hogar de Huellas y elegir.Ellos te lo agradecerán.Se entregan con todos los documentos en regla y constancias de vacunas.</p>
         </div>
         <div id="guar" style="background-image: url('assets/images/guaredria.JPG')">
@@ -56,6 +56,6 @@ Seguinos en
        
         
         </footer>
-        <script src="assets/JS/scservicios.js"></script>
+        <script src="{% static './js/scservicios.js' %}"></script>
 </body>
 </html>
